@@ -23,4 +23,10 @@ public class JavaFxController {
     public void fileClose() {
         Platform.exit();
     }
+
+    public void setClass() {
+        if(characterClass.getValue() != null) {
+
+        }
+    }
 }

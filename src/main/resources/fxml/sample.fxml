@@ -56,5 +56,6 @@
             <Font name="Chiller" size="36.0" />
          </font>
       </Label>
+      <Button layoutX="495.0" layoutY="61.0" mnemonicParsing="false" onAction="#setClass" text="Set Class" />
    </children>
 </AnchorPane>
