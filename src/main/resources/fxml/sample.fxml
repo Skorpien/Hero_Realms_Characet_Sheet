@@ -1,7 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
-fx:controller="com.hrcard.controller.JavaFxController"/>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hrcard.controller.JavaFxController">
+   <children>
+      <Label layoutX="31.0" layoutY="58.0" text="Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="enterName" layoutX="92.0" layoutY="47.0">
+         <font>
+            <Font name="Chiller" size="24.0" />
+         </font></TextField>
+      <Label layoutX="300.0" layoutY="59.0" text="Class">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="characterClass" blendMode="DARKEN" layoutX="350.0" layoutY="59.0" prefHeight="26.0" prefWidth="94.0">
+         <effect>
+            <InnerShadow />
+         </effect></ChoiceBox>
+      <MenuBar layoutY="1.0" prefHeight="26.0" prefWidth="600.0">
+        <menus>
+          <Menu fx:id="file" mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="fileSave" mnemonicParsing="false" text="Save" />
+                  <MenuItem fx:id="fileLoad" mnemonicParsing="false" text="Load" />
+                  <MenuItem fx:id="fileClose" mnemonicParsing="false" onAction="#fileClose" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label layoutX="44.0" layoutY="106.0" text="Starting HP">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="startingHP" layoutX="55.0" layoutY="126.0" prefHeight="51.0" prefWidth="48.0" text="0">
+         <font>
+            <Font name="Chiller" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
